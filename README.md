@@ -10,6 +10,7 @@ cppreference.com에 있는 c++ 문법 한국어로 정리할 리포지토리.
 바로가기
 
 * c++11
+  * auto and decltype
 
 * c++14
 
