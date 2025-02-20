@@ -23,25 +23,27 @@ c++23 부터는 매개변수가 없을 시
   * **=** automatic storage duration에 있는 사용되는 변수들을 값 복사 형태로 캡쳐한다.
   
   캡쳐들은 다음과 같은 종류들이 있다.
-  *identifier*
-  :값 복사를 통한 캡쳐
-  *identifier*...
-  :값 복사를 통한 pack expansion
-  &*identifier*
-  :참조에 의한 캡쳐
-  &*identifier*...
-  :참조에 의한 pack expansion
-  *this*
-  :참조에 의한 현제 객체 (람다가 속해있는 객체가 없으면 캡쳐 되지 않는 듯)
-  *identifier initializer* (c++14)
-  : 복사에 의한 이니셜라이져
-  &*identifier initializer* (c++14)
-  : 참조에 의한 이니셜라이져
-  **this* (c++17)
-  :값 복사에 의한 현제 객체
-  ...*identifier initializer*
-  &...*identifier initializer*
+  *identifier*   
+  :값 복사를 통한 캡쳐   
+  *identifier*...   
+  :값 복사를 통한 pack expansion   
+  &*identifier*   
+  :참조에 의한 캡쳐   
+  &*identifier*...   
+  :참조에 의한 pack expansion    
+  *this*   
+  :참조에 의한 현제 객체 (람다가 속해있는 객체가 없으면 캡쳐 되지 않는 듯)   
+  *identifier initializer* (c++14)   
+  : 복사에 의한 이니셜라이져   
+  &*identifier initializer* (c++14)   
+  : 참조에 의한 이니셜라이져   
+  **this* (c++17)   
+  :값 복사에 의한 현제 객체   
+  ...*identifier initializer*   
+  &...*identifier initializer*   
   위의 두 개는 pack expansion인 이니셜라이져를 캡쳐한건데 pack expansion이 아직 뭔지 모르겠네
+
+
 
   capture default를 쓰고 같은 형식의 캡쳐를 넣으면 에러가 뜬다.
   ex)
