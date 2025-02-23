@@ -1,0 +1,18 @@
+automatic storage duration(자동 기억 존속 시간)
+흔히 스택에 저장되는 값들
+
+static storage duration (정적 기억 존속 시간)
+전역 변수나 static 변수
+
+dynamic storage duration (동적 기억 존속 시간)
+new 할당해서 생기는 것들
+
+정적 기억 존속 시간은 3가지로 나뉘는데
+External linkage
+extern을 써서 다른 파일에서도 쓸 수 있다.
+
+Internal Linkage
+정의된 해당 파일에 대해서만 쓸 수 있다.
+
+No linkage 
+정의된 코드 블록 안에서만 쓸 수 있다.
